@@ -36,7 +36,7 @@ function Queue(delay, callback) {
       
       // resort the q
       q = q.sort(function (a, b) {
-        return a.id_str > b.id_str;
+        return a.id - b.id;
       });
 
       return this;
